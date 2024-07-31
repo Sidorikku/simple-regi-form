@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    background-color: #145079;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0.0.1);
+}
+
+.container header{
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 500;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+.container .form{
+    margin-top: 30px;
+}
+
+.form .input-field{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.form .input-field .cc h2{
+    outline: none;    
+    color: #707070;
+    margin-top: 8px;
+    display: flex;
+    align-items:flex-start;
+    font-size: medium;
+}
+
+.form :where(.input-field input, .select-box,){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;    
+    margin-top: 8px;
+    border:1px solid #cdd;
+    border-radius: 3px;
+    padding: 10 15px;
+    
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+    align-items: flex-start;
+}
+
+.form .gender-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gender-box label{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px ;
+}
+
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender{
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.form .civilstatus{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.civilstatus label{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px ;
+}
+.form :where(.civil-option, .civil){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.form .civil{
+    column-gap: 5px;
+    cursor: pointer;
+    color: #707070;
+}
+
+.form :where(.civil input, .civil label){
+    cursor: pointer;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.container .address{
+    margin-bottom: 2rem;
+}
+
+.address :where(input, .select-box){
+    margin-top: 5px;
+}
+
+.container .apply{
+    margin-bottom: 2rem;
+}
+.form button{
+    height: 55px;
+    width: 100%;
+    background-color: #d1d4ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    transition: all 0.2s ease;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.gender label{
+    color: #707070;
+}
+.form button:hover{
+    background-color: #16466d;
+}
+
+.gender input{
+    accent-color: #16466d;
+}
+
+.form .resume{
+    position: relative;
+    justify-content: center;
+}
+
+
+.form .worktype{
+    margin-top: 20px;
+    margin-bottom: 3rem;
+}
+
+.work label{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px ;
+    color: #707070;
+}
+
+.form :where(.type-option, .work){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .work{
+    column-gap: 5px;
+}
+
+.form :where(.work input, .work label){
+    cursor: pointer;
+}
+
+.form .vetstat{
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+.veteran label{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px ;
+    color: #707070;
+}
+
+.form :where(.vets-option, .veteran){
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .veteran{
+    column-gap: 5px;
+}
+
+.form :where(.veteran input, .veteran label){
+    cursor: pointer;
+}
+
+.form .disability-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.disability label{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px ;
+    color: #707070;
+}
+
+.form :where(.disab-option, .disability){
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .disablity{
+    column-gap: 5px;
+}
+
+.form :where(.disability input, .disability label){
+    cursor: pointer;
+}
+
+
+.container .resume{
+    margin-top: 5rem;
+    margin-left: 7rem;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding: 15px;
+}
+
+.resume label {
+    margin-left: 7rem;
+    font-size: medium;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+.resume input{
+    margin-left: 4rem;
+    font-size: medium;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender){
+        row-gap: 15px;
+    }
+
+    .form :where(.civil-option, .civil){
+        row-gap: 15px;
+    }
+
+    .form :where(.type-option, .work){
+        row-gap: 15px;
+    }
+    
+}
